@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+@author Teylo Lundos Aguiar
+@version 0.1
+-->
+<NotepadPlus>
+	<AutoComplete>
+		<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator=";" />
+		<KeyWord name="AMORLINC" func="yes"><Overload retVal="" descr="Retorna a depreciação de cada período contábil"></Overload></KeyWord>
+		<KeyWord name="BD" func="yes"><Overload retVal="" descr="Retorna a depreciação de um ativo para um período especificado, usando o método de balanço de declínio fixo"></Overload></KeyWord>
+		<KeyWord name="BDD" func="yes"><Overload retVal="" descr="Retorna a depreciação de um ativo com relação a um período especificado usando o método de saldos decrescentes duplos ou qualquer outro método especificado por você"></Overload></KeyWord>
+		<KeyWord name="BDV" func="yes"><Overload retVal="" descr="Retorna a depreciação de um ativo para um período especificado ou parcial usando um método de balanço decrescente"></Overload></KeyWord>
+		<KeyWord name="CUPDATAANT" func="yes"><Overload retVal="" descr="Retorna a data do cupom anterior à data de liquidação"></Overload></KeyWord>
+		<KeyWord name="CUPDATAPRÓX" func="yes"><Overload retVal="" descr="Retorna a próxima data do cupom após a data de liquidação"></Overload></KeyWord>
+		<KeyWord name="CUPDIAS" func="yes"><Overload retVal="" descr="Retorna o número de dias no período do cupom que contém a data de liquidação"></Overload></KeyWord>
+		<KeyWord name="CUPDIASINLIQ" func="yes"><Overload retVal="" descr="Retorna o número de dias desde o início do período do cupom até a data de liquidação"></Overload></KeyWord>
+		<KeyWord name="CUPDIASPRÓX" func="yes"><Overload retVal="" descr="Retorna o número de dias da data de liquidação até a data do próximo cupom"></Overload></KeyWord>
+		<KeyWord name="CUPNÚM" func="yes"><Overload retVal="" descr="Retorna o número de cupons a pagar entre as datas de liquidação e vencimento"></Overload></KeyWord>
+		<KeyWord name="DESC" func="yes"><Overload retVal="" descr="Retorna a taxa de desconto de um título"></Overload></KeyWord>
+		<KeyWord name="DPD" func="yes"><Overload retVal="" descr="Retorna a depreciação linear de um ativo para um período"></Overload></KeyWord>
+		<KeyWord name="DURAÇÃO" func="yes"><Overload retVal="" descr="Retorna a duração anual de um título com pagamentos de juros periódicos"></Overload></KeyWord>
+		<KeyWord name="DURAÇÃOP" func="yes"><Overload retVal="" descr="Retorna o número de períodos necessários para que um investimento atinja um valor específico"></Overload></KeyWord>
+		<KeyWord name="EFETIVA" func="yes"><Overload retVal="" descr="Retorna a taxa de juros anual efetiva, dados a taxa de juros anual nominal e o número de períodos compostos por ano"></Overload></KeyWord>
+		<KeyWord name="ÉPGTO" func="yes"><Overload retVal="" descr="Calcula os juros pagos durante um período específico de um investimento"></Overload></KeyWord>
+		<KeyWord name="HISTÓRICODEAÇÕES" func="yes"><Overload retVal="" descr="Recupera dados históricos de um instrumento financeiro e os carrega em uma matriz, que será despejada caso seja o resultado final de uma fórmula. Isso significa que, quando você pressionar ENTER, o Excel criará dinamicamente um intervalo de matriz com o tamanho apropriado."></Overload></KeyWord>
+		<KeyWord name="IPGTO" func="yes"><Overload retVal="" descr="Retorna o pagamento de juros para um investimento em um determinado período"></Overload></KeyWord>
+		<KeyWord name="JUROSACUM" func="yes"><Overload retVal="" descr="Retorna a taxa de juros acumulados de um título que paga uma taxa periódica de juros"></Overload></KeyWord>
+		<KeyWord name="JUROSACUMV" func="yes"><Overload retVal="" descr="Retorna os juros acumulados de um título que paga juros no vencimento"></Overload></KeyWord>
+		<KeyWord name="LUCRO" func="yes"><Overload retVal="" descr="Este artigo descreve a sintaxe da fórmula e o uso da função LUCRO no Microsoft Excel. Descrição. Retorna o lucro de um título que paga juros periódicos"></Overload></KeyWord>
+		<KeyWord name="LUCRODESC" func="yes"><Overload retVal="" descr="Retorna o rendimento anual de um título descontado; por exemplo, uma letra do tesouro"></Overload></KeyWord>
+		<KeyWord name="LUCROPRIMINC" func="yes"><Overload retVal="" descr="Retorna o rendimento de um título com um período inicial incompleto"></Overload></KeyWord>
+		<KeyWord name="LUCROÚLTINC" func="yes"><Overload retVal="" descr="Retorna o rendimento de um título com um período final incompleto"></Overload></KeyWord>
+		<KeyWord name="LUCROVENC" func="yes"><Overload retVal="" descr="Retorna o lucro anual de um título que paga juros no vencimento"></Overload></KeyWord>
+		<KeyWord name="MDURAÇÃO" func="yes"><Overload retVal="" descr="Retorna a duração de Macauley modificada para um título com um valor de paridade equivalente a R$ 100"></Overload></KeyWord>
+		<KeyWord name="MOEDADEC" func="yes"><Overload retVal="" descr="Converte um preço em reais, expresso como uma fração, em um preço em reais, expresso como um número decimal"></Overload></KeyWord>
+		<KeyWord name="MOEDAFRA" func="yes"><Overload retVal="" descr="Converte um preço em reais, expresso como um número decimal, em um preço em reais, expresso como uma fração"></Overload></KeyWord>
+		<KeyWord name="MTIR" func="yes"><Overload retVal="" descr="Calcula a taxa interna de retorno em que os fluxos de caixa positivos e negativos são financiados com diferentes taxas"></Overload></KeyWord>
+		<KeyWord name="NOMINAL" func="yes"><Overload retVal="" descr="Retorna a taxa de juros nominal anual"></Overload></KeyWord>
+		<KeyWord name="NPER" func="yes"><Overload retVal="" descr="Retorna o número de períodos de um investimento"></Overload></KeyWord>
+		<KeyWord name="OTN" func="yes"><Overload retVal="" descr="Retorna o rendimento equivalente a um título para uma letra do tesouro"></Overload></KeyWord>
+		<KeyWord name="OTNLUCRO" func="yes"><Overload retVal="" descr="Retorna o rendimento de uma letra do tesouro"></Overload></KeyWord>
+		<KeyWord name="OTNVALOR" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de uma letra do tesouro"></Overload></KeyWord>
+		<KeyWord name="PGTO" func="yes"><Overload retVal="" descr="Retorna o pagamento periódico de uma anuidade"></Overload></KeyWord>
+		<KeyWord name="PGTOCAPACUM" func="yes"><Overload retVal="" descr="Retorna o capital acumulado pago sobre um empréstimo entre dois períodos"></Overload></KeyWord>
+		<KeyWord name="PGTOJURACUM" func="yes"><Overload retVal="" descr="Retorna os juros acumulados pagos entre dois períodos"></Overload></KeyWord>
+		<KeyWord name="PPGTO" func="yes"><Overload retVal="" descr="Retorna o pagamento de capital para determinado período de investimento"></Overload></KeyWord>
+		<KeyWord name="PREÇO" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de um título que paga juros periódicos"></Overload></KeyWord>
+		<KeyWord name="PREÇODESC" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de um título descontado"></Overload></KeyWord>
+		<KeyWord name="PREÇOPRIMINC" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de um título com um período inicial incompleto"></Overload></KeyWord>
+		<KeyWord name="PREÇOÚLTINC" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de um título com um período final incompleto"></Overload></KeyWord>
+		<KeyWord name="PREÇOVENC" func="yes"><Overload retVal="" descr="Retorna o preço por R$ 100,00 do valor nominal de um título que paga juros no vencimento"></Overload></KeyWord>
+		<KeyWord name="RECEBER" func="yes"><Overload retVal="" descr="Retorna a quantia recebida no vencimento de um título totalmente investido"></Overload></KeyWord>
+		<KeyWord name="SDA" func="yes"><Overload retVal="" descr="Retorna a depreciação dos dígitos da soma dos anos de um ativo para um período especificado"></Overload></KeyWord>
+		<KeyWord name="TAXA" func="yes"><Overload retVal="" descr="Retorna a taxa de juros por período de uma anuidade"></Overload></KeyWord>
+		<KeyWord name="TAXAJURO" func="yes"><Overload retVal="" descr="Retorna uma taxa de juros equivalente para o crescimento de um investimento"></Overload></KeyWord>
+		<KeyWord name="TAXAJUROS" func="yes"><Overload retVal="" descr="Retorna a taxa de juros de um título totalmente investido"></Overload></KeyWord>
+		<KeyWord name="TIR" func="yes"><Overload retVal="" descr="Retorna a taxa interna de retorno para uma série de fluxos de caixa"></Overload></KeyWord>
+		<KeyWord name="VF" func="yes"><Overload retVal="" descr="Retorna o valor futuro de um investimento"></Overload></KeyWord>
+		<KeyWord name="VFPLANO" func="yes"><Overload retVal="" descr="Retorna o valor futuro de um capital inicial após a aplicação de uma série de taxas de juros compostos"></Overload></KeyWord>
+		<KeyWord name="VP" func="yes"><Overload retVal="" descr="Retorna o valor presente de um investimento"></Overload></KeyWord>
+		<KeyWord name="VPL" func="yes"><Overload retVal="" descr="Retorna o valor líquido atual de um investimento com base em uma série de fluxos de caixa periódicos e uma taxa de desconto"></Overload></KeyWord>
+		<KeyWord name="XTIR" func="yes"><Overload retVal="" descr="Fornece a taxa interna de retorno para um programa de fluxos de caixa que não é necessariamente periódico"></Overload></KeyWord>
+		<KeyWord name="XVPL" func="yes"><Overload retVal="" descr="Retorna o valor líquido presente de um programa de fluxos de caixa que não é necessariamente periódico"></Overload></KeyWord>
+		<KeyWord name="AGORA" func="yes"><Overload retVal="" descr="Retorna o número de série da data e da hora atuais"></Overload></KeyWord>
+		<KeyWord name="ANO" func="yes"><Overload retVal="" descr="Retorna o ano correspondente a uma data. O ano é retornado como um inteiro no intervalo de 1900-9999"></Overload></KeyWord>
+		<KeyWord name="DATA" func="yes"><Overload retVal="" descr="Retorna o número de série sequencial que representa uma determinada data"></Overload></KeyWord>
+		<KeyWord name="DATA.VALOR" func="yes"><Overload retVal="" descr="Converte uma data na forma de texto em um número de série"></Overload></KeyWord>
+		<KeyWord name="DATAM" func="yes"><Overload retVal="" descr="Retorna o número de série da data que é o número indicado de meses antes ou depois da data inicial"></Overload></KeyWord>
+		<KeyWord name="DIA" func="yes"><Overload retVal="" descr="Retorna o dia de uma data representado por um número de série. O dia é dado como um inteiro que varia de 1 a 31"></Overload></KeyWord>
+		<KeyWord name="DIA.DA.SEMANA" func="yes"><Overload retVal="" descr="Converte um número de série em um dia da semana"></Overload></KeyWord>
+		<KeyWord name="DIAS" func="yes"><Overload retVal="" descr="Retorna o número de dias entre duas datas"></Overload></KeyWord>
+		<KeyWord name="DIAS360" func="yes"><Overload retVal="" descr="Calcula o número de dias entre duas datas com base em um ano de 360 dias"></Overload></KeyWord>
+		<KeyWord name="DIATRABALHO" func="yes"><Overload retVal="" descr="Retorna um número que representa uma data que é o número indicado de dias úteis antes ou após uma data (a data inicial). Os dias úteis excluem fins de semana e quaisquer datas identificadas como feriados. Use DIATRABALHO para excluir os fins de semana ou feriados ao calcular as datas de vencimento de fatura, horas de entrega esperadas ou o número de dias de trabalho executado"></Overload></KeyWord>
+		<KeyWord name="DIATRABALHO.INTL" func="yes"><Overload retVal="" descr="Retorna o número de série da data antes ou depois de um número específico de dias úteis usando parâmetros para indicar quais e quantos dias são de fim de semana"></Overload></KeyWord>
+		<KeyWord name="DIATRABALHOTOTAL" func="yes"><Overload retVal="" descr="Retorna o número de dias úteis inteiros entre duas datas"></Overload></KeyWord>
+		<KeyWord name="DIATRABALHOTOTAL.INTL" func="yes"><Overload retVal="" descr="Retorna o número de dias úteis inteiros entre duas datas usando parâmetros para indicar quais e quantos dias são dias de fim de semana"></Overload></KeyWord>
+		<KeyWord name="FIMMÊS" func="yes"><Overload retVal="" descr="Retorna o número de série do último dia do mês antes ou depois de um número especificado de meses"></Overload></KeyWord>
+		<KeyWord name="FRAÇÃOANO" func="yes"><Overload retVal="" descr="Retorna a fração do ano que representa o número de dias entre data_inicial e data_final"></Overload></KeyWord>
+		<KeyWord name="HOJE" func="yes"><Overload retVal="" descr="Retorna o número de série da data de hoje"></Overload></KeyWord>
+		<KeyWord name="HORA" func="yes"><Overload retVal="" descr="Retorna a hora de um valor de tempo"></Overload></KeyWord>
+		<KeyWord name="MÊS" func="yes"><Overload retVal="" descr="Retorna o mês de uma data representado por um número de série. O mês é fornecido como um inteiro, variando de 1 (janeiro) a 12 (dezembro)"></Overload></KeyWord>
+		<KeyWord name="MINUTO" func="yes"><Overload retVal="" descr="Retorna o componente de minutos de um horário."></Overload></KeyWord>
+		<KeyWord name="NÚMSEMANA" func="yes"><Overload retVal="" descr="Converte um número de série em um número que representa onde a semana cai numericamente em um ano"></Overload></KeyWord>
+		<KeyWord name="NÚMSEMANAISO" func="yes"><Overload retVal="" descr="Retorna o número da semana ISO do ano de uma determinada data"></Overload></KeyWord>
+		<KeyWord name="SEGUNDO" func="yes"><Overload retVal="" descr="Retorna a secante de um ângulo"></Overload></KeyWord>
+		<KeyWord name="TEMPO" func="yes"><Overload retVal="" descr="Converte horas, minutos e segundos em um valor de tempo."></Overload></KeyWord>
+		<KeyWord name="VALOR.TEMPO" func="yes"><Overload retVal="" descr="Converte uma hora, na forma de texto, em um número de série"></Overload></KeyWord>
+		<KeyWord name="ABS" func="yes"><Overload retVal="" descr="Retorna o valor absoluto de um número"></Overload></KeyWord>
+		<KeyWord name="ACOS" func="yes"><Overload retVal="" descr="Retorna o arco cosseno de um número"></Overload></KeyWord>
+		<KeyWord name="ACOSH" func="yes"><Overload retVal="" descr="Retorna o cosseno hiperbólico inverso de um número"></Overload></KeyWord>
+		<KeyWord name="ACOT" func="yes"><Overload retVal="" descr="Retorna o arco cotangente de um número"></Overload></KeyWord>
+		<KeyWord name="ACOTH" func="yes"><Overload retVal="" descr="Retorna o arco cotangente de um número complexo"></Overload></KeyWord>
+		<KeyWord name="AGREGAR" func="yes"><Overload retVal="" descr="Retorna uma agregação em uma lista ou um banco de dados"></Overload></KeyWord>
+		<KeyWord name="ALEATÓRIO" func="yes"><Overload retVal="" descr="Retorna um número aleatório real maior que ou igual a 0 e menor que 1 distribuído uniformemente. Um novo número aleatório real é retornado sempre que a planilha é calculada"></Overload></KeyWord>
+		<KeyWord name="ALEATÓRIOENTRE" func="yes"><Overload retVal="" descr="Retorna um número aleatório inteiro entre os números especificados. Um novo número aleatório inteiro será retornado sempre que a planilha for calculada"></Overload></KeyWord>
+		<KeyWord name="ARÁBICO" func="yes"><Overload retVal="" descr="Converte um algarismo romano em um arábico"></Overload></KeyWord>
+		<KeyWord name="ARRED" func="yes"><Overload retVal="" descr="Arredonda um número para um número especificado de dígitos"></Overload></KeyWord>
+		<KeyWord name="ARREDMULTB.MAT" func="yes"><Overload retVal="" descr="Arredonda um número para baixo para o inteiro mais próximo ou para o múltiplo mais próximo de significância"></Overload></KeyWord>
+		<KeyWord name="ARREDONDAR.PARA.BAIXO" func="yes"><Overload retVal="" descr="Arredonda um número para baixo até zero"></Overload></KeyWord>
+		<KeyWord name="ARREDONDAR.PARA.CIMA" func="yes"><Overload retVal="" descr="Arredonda um número para cima, afastando-o de zero"></Overload></KeyWord>
+		<KeyWord name="ASEN" func="yes"><Overload retVal="" descr="Retorna o arco seno de um número"></Overload></KeyWord>
+		<KeyWord name="ASENH" func="yes"><Overload retVal="" descr="Retorna o seno hiperbólico inverso de um número"></Overload></KeyWord>
+		<KeyWord name="ATAN" func="yes"><Overload retVal="" descr="Retorna o arco tangente de um número"></Overload></KeyWord>
+		<KeyWord name="ATAN2" func="yes"><Overload retVal="" descr="Retorna o arco tangente das coordenadas x e y"></Overload></KeyWord>
+		<KeyWord name="ATANH" func="yes"><Overload retVal="" descr="Retorna a tangente hiperbólica inversa de um número"></Overload></KeyWord>
+		<KeyWord name="BASE" func="yes"><Overload retVal="" descr="Converte um número em uma representação de texto com a base determinada"></Overload></KeyWord>
+		<KeyWord name="COMBIN" func="yes"><Overload retVal="" descr="Retorna a quantidade de combinações de um determinado número de objetos"></Overload></KeyWord>
+		<KeyWord name="COMBINA" func="yes"><Overload retVal="" descr="Retorna o número de combinações com repetições de um determinado número de itens."></Overload></KeyWord>
+		<KeyWord name="COS" func="yes"><Overload retVal="" descr="Retorna o cosseno de um número"></Overload></KeyWord>
+		<KeyWord name="COSEC" func="yes"><Overload retVal="" descr="Retorna a cossecante de um ângulo"></Overload></KeyWord>
+		<KeyWord name="COSECH" func="yes"><Overload retVal="" descr="Retorna a cossecante hiperbólica de um ângulo"></Overload></KeyWord>
+		<KeyWord name="COSH" func="yes"><Overload retVal="" descr="Retorna o cosseno hiperbólico de um número"></Overload></KeyWord>
+		<KeyWord name="COT" func="yes"><Overload retVal="" descr="Retorna a cotangente de um ângulo"></Overload></KeyWord>
+		<KeyWord name="COTH" func="yes"><Overload retVal="" descr="Retorna a cotangente hiperbólica de um número"></Overload></KeyWord>
+		<KeyWord name="DECIMAL" func="yes"><Overload retVal="" descr="Converte em um número decimal a representação de texto de um número em determinada base"></Overload></KeyWord>
+		<KeyWord name="EXP" func="yes"><Overload retVal="" descr="Retorna e elevados à potência de um número especificado"></Overload></KeyWord>
+		<KeyWord name="FATDUPLO" func="yes"><Overload retVal="" descr="Retorna o fatorial duplo de um número"></Overload></KeyWord>
+		<KeyWord name="FATORIAL" func="yes"><Overload retVal="" descr="Retorna o fatorial de um número."></Overload></KeyWord>
+		<KeyWord name="GRAUS" func="yes"><Overload retVal="" descr="Converte radianos em graus"></Overload></KeyWord>
+		<KeyWord name="ÍMPAR" func="yes"><Overload retVal="" descr="Arredonda um número para cima até o inteiro ímpar mais próximo"></Overload></KeyWord>
+		<KeyWord name="INT" func="yes"><Overload retVal="" descr="Arredonda um número para baixo até o número inteiro mais próximo"></Overload></KeyWord>
+		<KeyWord name="LN" func="yes"><Overload retVal="" descr="Retorna o logaritmo natural de um número"></Overload></KeyWord>
+		<KeyWord name="LOG" func="yes"><Overload retVal="" descr="Retorna o logaritmo de um número a uma base especificada"></Overload></KeyWord>
+		<KeyWord name="LOG10" func="yes"><Overload retVal="" descr="Retorna o logaritmo de base 10 de um número"></Overload></KeyWord>
+		<KeyWord name="MARRED" func="yes"><Overload retVal="" descr="Retorna um número arredondado para o múltiplo desejado"></Overload></KeyWord>
+		<KeyWord name="MATRIZ.DETERM" func="yes"><Overload retVal="" descr="Retorna o determinante da matriz de uma variável do tipo matriz"></Overload></KeyWord>
+		<KeyWord name="MATRIZ.INVERSO" func="yes"><Overload retVal="" descr="Retorna a matriz inversa de uma variável do tipo matriz"></Overload></KeyWord>
+		<KeyWord name="MATRIZ.MULT" func="yes"><Overload retVal="" descr="Retorna o produto de duas matrizes"></Overload></KeyWord>
+		<KeyWord name="MATRIZALEATÓRIA" func="yes"><Overload retVal="" descr="Retorna uma matriz de números aleatórios entre 0 e 1. No entanto, você pode especificar a quantidade de linhas e colunas a serem preenchidas, os valores mínimo e máximo e se deseja retornar números inteiros ou valores decimais."></Overload></KeyWord>
+		<KeyWord name="MDC" func="yes"><Overload retVal="" descr="Retorna o máximo divisor comum"></Overload></KeyWord>
+		<KeyWord name="MMC" func="yes"><Overload retVal="" descr="Retorna o mínimo múltiplo comum"></Overload></KeyWord>
+		<KeyWord name="MOD" func="yes"><Overload retVal="" descr="Retorna o resto da divisão"></Overload></KeyWord>
+		<KeyWord name="MULT" func="yes"><Overload retVal="" descr="Multiplica dois ou mais números."></Overload></KeyWord>
+		<KeyWord name="MULTINOMIAL" func="yes"><Overload retVal="" descr="Retorna o multinômio de um conjunto de números"></Overload></KeyWord>
+		<KeyWord name="MUNIT" func="yes"><Overload retVal="" descr="Retorna a matriz de unidade ou a dimensão especificada"></Overload></KeyWord>
+		<KeyWord name="PAR" func="yes"><Overload retVal="" descr="Arredonda um número para cima até o inteiro par mais próximo"></Overload></KeyWord>
+		<KeyWord name="PI" func="yes"><Overload retVal="" descr="Retorna o valor de pi"></Overload></KeyWord>
+		<KeyWord name="POTÊNCIA" func="yes"><Overload retVal="" descr="Retorna o resultado de um número elevado a uma potência."></Overload></KeyWord>
+		<KeyWord name="QUOCIENTE" func="yes"><Overload retVal="" descr="Retorna a parte inteira de uma divisão"></Overload></KeyWord>
+		<KeyWord name="RADIANOS" func="yes"><Overload retVal="" descr="Converte graus em radianos"></Overload></KeyWord>
+		<KeyWord name="RAIZ" func="yes"><Overload retVal="" descr="Retorna uma raiz quadrada positiva"></Overload></KeyWord>
+		<KeyWord name="RAIZPI" func="yes"><Overload retVal="" descr="Retorna a raiz quadrada de (número* pi)"></Overload></KeyWord>
+		<KeyWord name="ROMANO" func="yes"><Overload retVal="" descr="Converte um numeral arábico em romano, como texto"></Overload></KeyWord>
+		<KeyWord name="SEC" func="yes"><Overload retVal="" descr="Retorna a secante de um ângulo."></Overload></KeyWord>
+		<KeyWord name="SECH" func="yes"><Overload retVal="" descr="Retorna a secante hiperbólica de um ângulo"></Overload></KeyWord>
+		<KeyWord name="SEN" func="yes"><Overload retVal="" descr="Retorna o seno de um ângulo dado"></Overload></KeyWord>
+		<KeyWord name="SENH" func="yes"><Overload retVal="" descr="Retorna o seno hiperbólico de um número"></Overload></KeyWord>
+		<KeyWord name="SEQUÊNCIA" func="yes"><Overload retVal="" descr="Gera uma sequência de números."></Overload></KeyWord>
+		<KeyWord name="SINAL" func="yes"><Overload retVal="" descr="Retorna o sinal de um número"></Overload></KeyWord>
+		<KeyWord name="SOMA" func="yes"><Overload retVal="" descr="Soma seus argumentos"></Overload></KeyWord>
+		<KeyWord name="SOMAQUAD" func="yes"><Overload retVal="" descr="Retorna a soma dos quadrados dos argumentos"></Overload></KeyWord>
+		<KeyWord name="SOMARPRODUTO" func="yes"><Overload retVal="" descr="Retorna a soma dos produtos dos componentes correspondentes da matriz"></Overload></KeyWord>
+		<KeyWord name="SOMASE" func="yes"><Overload retVal="" descr="Soma as células especificadas por um determinado critério"></Overload></KeyWord>
+		<KeyWord name="SOMASEQÜÊNCIA" func="yes"><Overload retVal="" descr="Retorna a soma de uma sequência polinomial baseada na fórmula"></Overload></KeyWord>
+		<KeyWord name="SOMASES" func="yes"><Overload retVal="" descr="Soma as células de um intervalo que atendem a vários critérios"></Overload></KeyWord>
+		<KeyWord name="SOMAX2DY2" func="yes"><Overload retVal="" descr="Retorna a soma da diferença dos quadrados dos valores correspondentes em duas matrizes"></Overload></KeyWord>
+		<KeyWord name="SOMAX2SY2" func="yes"><Overload retVal="" descr="Retorna a soma da soma dos quadrados dos valores correspondentes em duas matrizes"></Overload></KeyWord>
+		<KeyWord name="SOMAXMY2" func="yes"><Overload retVal="" descr="Retorna a soma dos quadrados das diferenças dos valores correspondentes em duas matrizes"></Overload></KeyWord>
+		<KeyWord name="SUBTOTAL" func="yes"><Overload retVal="" descr="Retorna um subtotal em uma lista ou banco de dados"></Overload></KeyWord>
+		<KeyWord name="TAN" func="yes"><Overload retVal="" descr="Retorna a tangente de um número"></Overload></KeyWord>
+		<KeyWord name="TANH" func="yes"><Overload retVal="" descr="Retorna a tangente hiperbólica de um número"></Overload></KeyWord>
+		<KeyWord name="TETO.MAT" func="yes"><Overload retVal="" descr="Arredonda um número para cima até o inteiro mais próximo ou o múltiplo de significância mais próximo"></Overload></KeyWord>
+		<KeyWord name="TRUNCAR" func="yes"><Overload retVal="" descr="Trunca um número para um inteiro"></Overload></KeyWord>
+		<KeyWord name="CONT.NÚM" func="yes"><Overload retVal="" descr="Calcula quantos números há na lista de argumentos"></Overload></KeyWord>
+		<KeyWord name="CONT.SE" func="yes"><Overload retVal="" descr="Calcula o número de células em um intervalo que satisfaz determinados critérios"></Overload></KeyWord>
+		<KeyWord name="CONT.SES" func="yes"><Overload retVal="" descr="Conta o número de células em um intervalo que satisfaz vários critérios"></Overload></KeyWord>
+		<KeyWord name="CONT.VALORES" func="yes"><Overload retVal="" descr="Calcula quantos valores há na lista de argumentos"></Overload></KeyWord>
+		<KeyWord name="CONTAR.VAZIO" func="yes"><Overload retVal="" descr="Conta o número de células vazias no intervalo"></Overload></KeyWord>
+		<KeyWord name="CORREL" func="yes"><Overload retVal="" descr="Retorna o coeficiente de correlação entre dois conjuntos de dados"></Overload></KeyWord>
+		<KeyWord name="COVARIAÇÃO.P" func="yes"><Overload retVal="" descr="Retorna a covariância, a média dos produtos dos desvios pares"></Overload></KeyWord>
+		<KeyWord name="COVARIAÇÃO.S" func="yes"><Overload retVal="" descr="Retorna a covariação de amostra, a média dos desvios dos produtos para cada par de pontos de dados em dois conjuntos de dados"></Overload></KeyWord>
+		<KeyWord name="CRESCIMENTO" func="yes"><Overload retVal="" descr="Retorna valores ao longo de uma tendência exponencial"></Overload></KeyWord>
+		<KeyWord name="CURT" func="yes"><Overload retVal="" descr="Retorna a curtose de um conjunto de dados."></Overload></KeyWord>
+		<KeyWord name="DESV.MÉDIO" func="yes"><Overload retVal="" descr="Retorna a média dos desvios absolutos dos pontos de dados em relação à média"></Overload></KeyWord>
+		<KeyWord name="DESVPAD.A" func="yes"><Overload retVal="" descr="Estima o desvio padrão com base em uma amostra"></Overload></KeyWord>
+		<KeyWord name="DESVPAD.P" func="yes"><Overload retVal="" descr="Calcula o desvio padrão com base na população total"></Overload></KeyWord>
+		<KeyWord name="DESVPADA" func="yes"><Overload retVal="" descr="Estima o desvio padrão com base em uma amostra, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="DESVPADPA" func="yes"><Overload retVal="" descr="Calcula o desvio padrão com base na população total, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="DESVQ" func="yes"><Overload retVal="" descr="Retorna a soma dos quadrados dos desvios"></Overload></KeyWord>
+		<KeyWord name="DIST.BETA" func="yes"><Overload retVal="" descr="Retorna a função de distribuição cumulativa beta"></Overload></KeyWord>
+		<KeyWord name="DIST.BIN.NEG" func="yes"><Overload retVal="" descr="Retorna a distribuição binomial negativa"></Overload></KeyWord>
+		<KeyWord name="DIST.BIN.NEG.N" func="yes"><Overload retVal="" descr="Retorna a distribuição binomial negativa"></Overload></KeyWord>
+		<KeyWord name="DIST.F" func="yes"><Overload retVal="" descr="Retorna a distribuição da probabilidade F"></Overload></KeyWord>
+		<KeyWord name="DIST.F.CD" func="yes"><Overload retVal="" descr="Retorna a distribuição da probabilidade F"></Overload></KeyWord>
+		<KeyWord name="DIST.GAMA" func="yes"><Overload retVal="" descr="Retorna a distribuição gama"></Overload></KeyWord>
+		<KeyWord name="DIST.HIPERGEOM.N" func="yes"><Overload retVal="" descr="Retorna a distribuição hipergeométrica"></Overload></KeyWord>
+		<KeyWord name="DIST.LOGNORMAL.N" func="yes"><Overload retVal="" descr="Retorna a distribuição log-normal cumulativa"></Overload></KeyWord>
+		<KeyWord name="DIST.NORM.N" func="yes"><Overload retVal="" descr="Retorna a distribuição cumulativa normal"></Overload></KeyWord>
+		<KeyWord name="DIST.NORMP.N" func="yes"><Overload retVal="" descr="Retorna a distribuição cumulativa normal padrão"></Overload></KeyWord>
+		<KeyWord name="DIST.POISSON" func="yes"><Overload retVal="" descr="Retorna a distribuição de Poisson"></Overload></KeyWord>
+		<KeyWord name="DIST.QUIQUA" func="yes"><Overload retVal="" descr="Retorna a função de densidade da probabilidade beta cumulativa"></Overload></KeyWord>
+		<KeyWord name="DIST.QUIQUA.CD" func="yes"><Overload retVal="" descr="Retorna a probabilidade unicaudal da distribuição qui-quadrada"></Overload></KeyWord>
+		<KeyWord name="DIST.T" func="yes"><Overload retVal="" descr="Retorna os pontos percentuais (probabilidade) para a distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="DIST.T.BC" func="yes"><Overload retVal="" descr="Retorna os pontos percentuais (probabilidade) para a distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="DIST.T.CD" func="yes"><Overload retVal="" descr="Retorna a distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="DIST.WEIBULL" func="yes"><Overload retVal="" descr="Retorna a distribuição de Weibull"></Overload></KeyWord>
+		<KeyWord name="DISTORÇÃO" func="yes"><Overload retVal="" descr="Retorna a distorção de um conjunto de dados."></Overload></KeyWord>
+		<KeyWord name="DISTORÇÃO.P" func="yes"><Overload retVal="" descr="Retorna a inclinação de uma distribuição baseada em uma população: uma caracterização do grau de assimetria de uma distribuição em torno da sua média"></Overload></KeyWord>
+		<KeyWord name="DISTR.BINOM" func="yes"><Overload retVal="" descr="Retorna a probabilidade da distribuição binomial do termo individual"></Overload></KeyWord>
+		<KeyWord name="DISTR.EXPON" func="yes"><Overload retVal="" descr="Retorna a distribuição exponencial"></Overload></KeyWord>
+		<KeyWord name="EPADYX" func="yes"><Overload retVal="" descr="Retorna o erro padrão do valor y previsto para cada x da regressão"></Overload></KeyWord>
+		<KeyWord name="FISHER" func="yes"><Overload retVal="" descr="Retorna a transformação Fisher de uma correlação."></Overload></KeyWord>
+		<KeyWord name="FISHERINV" func="yes"><Overload retVal="" descr="Retorna o inverso da transformação de Fisher"></Overload></KeyWord>
+		<KeyWord name="FREQÜÊNCIA" func="yes"><Overload retVal="" descr="Calcula a frequência de um intervalo de dados."></Overload></KeyWord>
+		<KeyWord name="GAMA" func="yes"><Overload retVal="" descr="Retorna o valor da função GAMA"></Overload></KeyWord>
+		<KeyWord name="GAUSS" func="yes"><Overload retVal="" descr="Retorna 0,5 a menos que a distribuição cumulativa normal padrão"></Overload></KeyWord>
+		<KeyWord name="INCLINAÇÃO" func="yes"><Overload retVal="" descr="Retorna a inclinação da linha de regressão linear."></Overload></KeyWord>
+		<KeyWord name="INT.CONFIANÇA.NORM" func="yes"><Overload retVal="" descr="Retorna o intervalo de confiança para uma média da população"></Overload></KeyWord>
+		<KeyWord name="INT.CONFIANÇA.T" func="yes"><Overload retVal="" descr="Retorna o intervalo de confiança para uma média da população usando a distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="INTERCEPÇÃO" func="yes"><Overload retVal="" descr="Retorna o ponto de interceptação da linha de regressão."></Overload></KeyWord>
+		<KeyWord name="INTERV.DISTR.BINOM" func="yes"><Overload retVal="" descr="Retorna a probabilidade de um resultado de teste usando uma distribuição binomial"></Overload></KeyWord>
+		<KeyWord name="INV.BETA" func="yes"><Overload retVal="" descr="Retorna o inverso da função de distribuição cumulativa para uma distribuição beta especificada"></Overload></KeyWord>
+		<KeyWord name="INV.BINOM" func="yes"><Overload retVal="" descr="Retorna o menor valor para o qual a distribuição binomial cumulativa é menor ou igual ao valor padrão"></Overload></KeyWord>
+		<KeyWord name="INV.F" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição de probabilidade F"></Overload></KeyWord>
+		<KeyWord name="INV.F.CD" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição de probabilidade F"></Overload></KeyWord>
+		<KeyWord name="INV.GAMA" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa gama"></Overload></KeyWord>
+		<KeyWord name="INV.LOGNORMAL" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa log-normal"></Overload></KeyWord>
+		<KeyWord name="INV.NORM.N" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa normal"></Overload></KeyWord>
+		<KeyWord name="INV.NORMP.N" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa normal padrão"></Overload></KeyWord>
+		<KeyWord name="INV.QUIQUA" func="yes"><Overload retVal="" descr="Retorna a função de densidade da probabilidade beta cumulativa"></Overload></KeyWord>
+		<KeyWord name="INV.QUIQUA.CD" func="yes"><Overload retVal="" descr="Retorna o inverso da probabilidade unicaudal da distribuição qui-quadrada"></Overload></KeyWord>
+		<KeyWord name="INV.T" func="yes"><Overload retVal="" descr="Retorna o valor t da distribuição t de Student como uma função da probabilidade e dos graus de liberdade"></Overload></KeyWord>
+		<KeyWord name="INV.T.BC" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="LNGAMA" func="yes"><Overload retVal="" descr="Retorna o logaritmo natural da função gama, G(x)."></Overload></KeyWord>
+		<KeyWord name="LNGAMA.PRECISO" func="yes"><Overload retVal="" descr="Retorna o logaritmo natural da função gama, G(x)."></Overload></KeyWord>
+		<KeyWord name="MAIOR" func="yes"><Overload retVal="" descr="Retorna o maior valor k-ésimo de um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="MÁXIMO" func="yes"><Overload retVal="" descr="Retorna o maior valor em um conjunto de dados."></Overload></KeyWord>
+		<KeyWord name="MÁXIMOA" func="yes"><Overload retVal="" descr="Retorna o valor máximo em uma lista de argumentos, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="MÁXIMOSES" func="yes"><Overload retVal="" descr="Retorna o valor máximo entre as células especificadas por um determinado conjunto de critérios ou condições"></Overload></KeyWord>
+		<KeyWord name="MED" func="yes"><Overload retVal="" descr="Retorna a mediana dos números indicados"></Overload></KeyWord>
+		<KeyWord name="MÉDIA" func="yes"><Overload retVal="" descr="Retorna a média dos argumentos"></Overload></KeyWord>
+		<KeyWord name="MÉDIA.GEOMÉTRICA" func="yes"><Overload retVal="" descr="Retorna a média geométrica"></Overload></KeyWord>
+		<KeyWord name="MÉDIA.HARMÔNICA" func="yes"><Overload retVal="" descr="Retorna a média harmônica"></Overload></KeyWord>
+		<KeyWord name="MÉDIA.INTERNA" func="yes"><Overload retVal="" descr="Retorna a média do interior de um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="MÉDIAA" func="yes"><Overload retVal="" descr="Retorna a média dos argumentos, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="MÉDIASE" func="yes"><Overload retVal="" descr="Retorna a média (aritmética) de todas as células em um intervalo que satisfazem um determinado critério"></Overload></KeyWord>
+		<KeyWord name="MÉDIASES" func="yes"><Overload retVal="" descr="Retorna a média (média aritmética) de todas as células que satisfazem vários critérios"></Overload></KeyWord>
+		<KeyWord name="MENOR" func="yes"><Overload retVal="" descr="Retorna o menor valor k-ésimo em um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="MÍNIMO" func="yes"><Overload retVal="" descr="Retorna o menor valor em um conjunto de dados."></Overload></KeyWord>
+		<KeyWord name="MÍNIMOA" func="yes"><Overload retVal="" descr="Retorna o menor valor em uma lista de argumentos, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="MÍNIMOSES" func="yes"><Overload retVal="" descr="Retorna o valor mínimo entre as células especificadas por um determinado conjunto de critérios ou condições."></Overload></KeyWord>
+		<KeyWord name="MODO.MULT" func="yes"><Overload retVal="" descr="Retorna uma matriz vertical dos valores que ocorrem com mais frequência, ou repetidamente, em uma matriz ou intervalo de dados"></Overload></KeyWord>
+		<KeyWord name="MODO.ÚNICO" func="yes"><Overload retVal="" descr="Retorna o valor mais comum em um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="ORDEM.EQ" func="yes"><Overload retVal="" descr="Retorna a posição de um número em uma lista de números"></Overload></KeyWord>
+		<KeyWord name="ORDEM.MÉD" func="yes"><Overload retVal="" descr="Retorna a posição de um número em uma lista de números"></Overload></KeyWord>
+		<KeyWord name="ORDEM.PORCENTUAL.EXC" func="yes"><Overload retVal="" descr="Retorna a ordem de um valor em um conjunto de dados definido como um percentual (0..1, exclusivamente) do conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="ORDEM.PORCENTUAL.INC" func="yes"><Overload retVal="" descr="Retorna a ordem percentual de um valor em um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="PADRONIZAR" func="yes"><Overload retVal="" descr="Padroniza um valor baseado em média e desvio padrão."></Overload></KeyWord>
+		<KeyWord name="PEARSON" func="yes"><Overload retVal="" descr="Retorna o coeficiente de correlação do momento do produto Pearson"></Overload></KeyWord>
+		<KeyWord name="PERCENTIL.EXC" func="yes"><Overload retVal="" descr="Retorna o k-ésimo percentil de valores em um intervalo, em que k está no intervalo 0..1, exclusivamente"></Overload></KeyWord>
+		<KeyWord name="PERCENTIL.INC" func="yes"><Overload retVal="" descr="Retorna o k-ésimo percentil de valores em um intervalo"></Overload></KeyWord>
+		<KeyWord name="PERMUT" func="yes"><Overload retVal="" descr="Retorna o número de permutações de um determinado número de objetos"></Overload></KeyWord>
+		<KeyWord name="PERMUTAS" func="yes"><Overload retVal="" descr="Retorna o número de permutações referentes a determinado número de objetos (com repetições) que podem ser selecionadas do total de objetos"></Overload></KeyWord>
+		<KeyWord name="PHI" func="yes"><Overload retVal="" descr="Retorna o valor da função de densidade referente a uma distribuição normal padrão"></Overload></KeyWord>
+		<KeyWord name="PREVISÃO.ETS" func="yes"><Overload retVal="" descr="Prevê um valor futuro com base em dados históricos."></Overload></KeyWord>
+		<KeyWord name="PREVISÃO.ETS.CONFINT" func="yes"><Overload retVal="" descr="Retorna o intervalo de confiança da previsão ETS."></Overload></KeyWord>
+		<KeyWord name="PREVISÃO.ETS.SAZONALIDADE" func="yes"><Overload retVal="" descr="Retorna a sazonalidade da previsão ETS."></Overload></KeyWord>
+		<KeyWord name="PREVISÃO.ETS.STAT" func="yes"><Overload retVal="" descr="Retorna estatísticas da previsão ETS."></Overload></KeyWord>
+		<KeyWord name="PREVISÃO.LINEAR" func="yes"><Overload retVal="" descr="Retorna uma previsão linear para um valor futuro."></Overload></KeyWord>
+		<KeyWord name="PROB" func="yes"><Overload retVal="" descr="Retorna a probabilidade de os valores em um intervalo estarem entre dois limites"></Overload></KeyWord>
+		<KeyWord name="PROJ.LIN" func="yes"><Overload retVal="" descr="Retorna os parâmetros da regressão linear."></Overload></KeyWord>
+		<KeyWord name="PROJ.LOG" func="yes"><Overload retVal="" descr="Retorna os parâmetros da regressão logarítmica."></Overload></KeyWord>
+		<KeyWord name="QUARTIL.EXC" func="yes"><Overload retVal="" descr="Retorna o quartil do conjunto de dados, com base nos valores de percentil de 0..1, exclusivamente"></Overload></KeyWord>
+		<KeyWord name="QUARTIL.INC" func="yes"><Overload retVal="" descr="Retorna o quartil de um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="RQUAD" func="yes"><Overload retVal="" descr="Retorna o quadrado do coeficiente de correlação do momento do produto de Pearson"></Overload></KeyWord>
+		<KeyWord name="TENDÊNCIA" func="yes"><Overload retVal="" descr="Retorna valores ao longo de uma tendência linear"></Overload></KeyWord>
+		<KeyWord name="TESTE.F" func="yes"><Overload retVal="" descr="Retorna o resultado de um teste F"></Overload></KeyWord>
+		<KeyWord name="TESTE.QUIQUA" func="yes"><Overload retVal="" descr="Retorna o teste para a independência"></Overload></KeyWord>
+		<KeyWord name="TESTE.T" func="yes"><Overload retVal="" descr="Retorna a probabilidade associada ao teste t de Student"></Overload></KeyWord>
+		<KeyWord name="TESTE.Z" func="yes"><Overload retVal="" descr="Retorna o valor de probabilidade unicaudal de um teste z"></Overload></KeyWord>
+		<KeyWord name="VAR.A" func="yes"><Overload retVal="" descr="Estima a variância com base em uma amostra"></Overload></KeyWord>
+		<KeyWord name="VAR.P" func="yes"><Overload retVal="" descr="Calcula a variância com base em toda a população"></Overload></KeyWord>
+		<KeyWord name="VARA" func="yes"><Overload retVal="" descr="Estima a variância com base em uma amostra, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="VARPA" func="yes"><Overload retVal="" descr="Calcula a variância com base em toda a população, inclusive números, texto e valores lógicos"></Overload></KeyWord>
+		<KeyWord name="AGRUPARPOR" func="yes"><Overload retVal="" descr="Agrupa dados com base em critérios especificados."></Overload></KeyWord>
+		<KeyWord name="ÁREAS" func="yes"><Overload retVal="" descr="Retorna o número de áreas em uma referência"></Overload></KeyWord>
+		<KeyWord name="CLASSIFICAR" func="yes"><Overload retVal="" descr="Classifica um intervalo de dados."></Overload></KeyWord>
+		<KeyWord name="CLASSIFICARPOR" func="yes"><Overload retVal="" descr="Classifica o conteúdo de um intervalo ou matriz baseado nos valores em um intervalo ou matriz correspondente"></Overload></KeyWord>
+		<KeyWord name="COL" func="yes"><Overload retVal="" descr="Retorna o número da coluna de uma referência."></Overload></KeyWord>
+		<KeyWord name="COLS" func="yes"><Overload retVal="" descr="Retorna o número de colunas em um intervalo."></Overload></KeyWord>
+		<KeyWord name="CORRESP" func="yes"><Overload retVal="" descr="Retorna a posição de um valor dentro de um intervalo."></Overload></KeyWord>
+		<KeyWord name="CORRESPX" func="yes"><Overload retVal="" descr="Retorna a posição relativa de um item em uma matriz ou intervalo de células."></Overload></KeyWord>
+		<KeyWord name="CORTARINTERVALO" func="yes"><Overload retVal="" descr="Remove uma parte especificada de um intervalo."></Overload></KeyWord>
+		<KeyWord name="DESCARTAR" func="yes"><Overload retVal="" descr="Descarta valores especificados de um intervalo."></Overload></KeyWord>
+		<KeyWord name="DESLOC" func="yes"><Overload retVal="" descr="Retorna um deslocamento de referência com base em uma determinada referência"></Overload></KeyWord>
+		<KeyWord name="EMPILHARH" func="yes"><Overload retVal="" descr="Acrescenta matrizes horizontalmente e em sequência para retornar uma matriz maior"></Overload></KeyWord>
+		<KeyWord name="EMPILHARV" func="yes"><Overload retVal="" descr="Acrescenta matrizes verticalmente e em sequência para devolver uma matriz maior"></Overload></KeyWord>
+		<KeyWord name="ENDEREÇO" func="yes"><Overload retVal="" descr="Retorna uma referência como texto para uma única célula em uma planilha"></Overload></KeyWord>
+		<KeyWord name="ESCOLHER" func="yes"><Overload retVal="" descr="Escolhe um valor em uma lista de valores"></Overload></KeyWord>
+		<KeyWord name="ESCOLHERCOLS" func="yes"><Overload retVal="" descr="Retorna as colunas especificadas de uma matriz"></Overload></KeyWord>
+		<KeyWord name="ESCOLHERLINS" func="yes"><Overload retVal="" descr="Retorna as linhas especificadas de uma matriz"></Overload></KeyWord>
+		<KeyWord name="EXPANDIR" func="yes"><Overload retVal="" descr="Expande ou pads uma matriz para dimensões de linha e coluna especificadas"></Overload></KeyWord>
+		<KeyWord name="FILTRO" func="yes"><Overload retVal="" descr="Filtra um intervalo de dados baseado nos critérios que você define"></Overload></KeyWord>
+		<KeyWord name="FÓRMULATEXTO" func="yes"><Overload retVal="" descr="Retorna a fórmula em determinada referência como texto"></Overload></KeyWord>
+		<KeyWord name="HIPERLINK" func="yes"><Overload retVal="" descr="Cria um atalho ou link que abre um documento armazenado em um servidor de rede, na Intranet ou na Internet"></Overload></KeyWord>
+		<KeyWord name="IMAGEM" func="yes"><Overload retVal="" descr="Insere uma imagem em uma célula."></Overload></KeyWord>
+		<KeyWord name="ÍNDICE" func="yes"><Overload retVal="" descr="Retorna o valor de uma célula específica."></Overload></KeyWord>
+		<KeyWord name="INDIRETO" func="yes"><Overload retVal="" descr="Retorna uma referência indicada por um valor de texto"></Overload></KeyWord>
+		<KeyWord name="INFODADOSTABELADINÂMICA" func="yes"><Overload retVal="" descr="Retorna os dados armazenados em um relatório de Tabela Dinâmica"></Overload></KeyWord>
+		<KeyWord name="LIN" func="yes"><Overload retVal="" descr="Retorna o número da linha de uma referência."></Overload></KeyWord>
+		<KeyWord name="LINS" func="yes"><Overload retVal="" descr="Retorna o número de linhas em um intervalo."></Overload></KeyWord>
+		<KeyWord name="PARACOL" func="yes"><Overload retVal="" descr="Devolve a matriz numa única coluna"></Overload></KeyWord>
+		<KeyWord name="PARALIN" func="yes"><Overload retVal="" descr="Devolve a matriz numa única linha"></Overload></KeyWord>
+		<KeyWord name="PEGAR" func="yes"><Overload retVal="" descr="Extrai dados de um intervalo."></Overload></KeyWord>
+		<KeyWord name="PIVOTAR" func="yes"><Overload retVal="" descr="Cria uma tabela dinâmica com base nos dados."></Overload></KeyWord>
+		<KeyWord name="PROC" func="yes"><Overload retVal="" descr="Procura valores em um vetor ou uma matriz"></Overload></KeyWord>
+		<KeyWord name="PROCH" func="yes"><Overload retVal="" descr="Procura na linha superior de uma matriz e retorna o valor da célula especificada"></Overload></KeyWord>
+		<KeyWord name="PROCV" func="yes"><Overload retVal="" descr="Procura na primeira coluna de uma matriz e move-se ao longo da linha para retornar o valor de uma célula"></Overload></KeyWord>
+		<KeyWord name="PROCX" func="yes"><Overload retVal="" descr="Pesquisa um intervalo ou uma matriz e retorna um item correspondente à primeira correspondência encontrada. Se não houver uma correspondência, então o PROCX poderá retornar a correspondência mais adequada(aproximada)"></Overload></KeyWord>
+		<KeyWord name="QUEBRARCOLS" func="yes"><Overload retVal="" descr="Molda a linha ou coluna de valores fornecida por colunas após um número especificado de elementos"></Overload></KeyWord>
+		<KeyWord name="QUEBRARLINS" func="yes"><Overload retVal="" descr="Molda a linha ou coluna de valores fornecida por linhas após um número especificado de elementos"></Overload></KeyWord>
+		<KeyWord name="RTD" func="yes"><Overload retVal="" descr="Recupera os dados, em tempo real, de um programa compatível com a automação COM"></Overload></KeyWord>
+		<KeyWord name="TRANSPOR" func="yes"><Overload retVal="" descr="Retorna a transposição de uma matriz"></Overload></KeyWord>
+		<KeyWord name="ÚNICO" func="yes"><Overload retVal="" descr="Retorna valores únicos de um intervalo."></Overload></KeyWord>
+		<KeyWord name="VALORDOCAMPO" func="yes"><Overload retVal="" descr="Retorna o valor de um campo especificado."></Overload></KeyWord>
+		<KeyWord name="BDCONTAR" func="yes"><Overload retVal="" descr="Conta as células que contêm números em um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDCONTARA" func="yes"><Overload retVal="" descr="Conta as células não vazias em um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDDESVPA" func="yes"><Overload retVal="" descr="Calcula o desvio padrão com base em toda a população de entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDEST" func="yes"><Overload retVal="" descr="Estima o desvio padrão com base em uma amostra de entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDEXTRAIR" func="yes"><Overload retVal="" descr="Extrai um único registro que corresponde a um critério específico de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDMÁX" func="yes"><Overload retVal="" descr="Retorna o valor máximo das entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDMÉDIA" func="yes"><Overload retVal="" descr="Retorna a média das entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDMÍN" func="yes"><Overload retVal="" descr="Retorna o valor mínimo das entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDMULTIPL" func="yes"><Overload retVal="" descr="Multiplica os valores em um campo específico de registros que correspondem ao critério em um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDSOMA" func="yes"><Overload retVal="" descr="Soma os números na coluna dos campos de registros no banco de dados que correspondem ao critério"></Overload></KeyWord>
+		<KeyWord name="BDVAREST" func="yes"><Overload retVal="" descr="Estima a variância com base em uma amostra de entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="BDVARP" func="yes"><Overload retVal="" descr="Calcula a variação com base na população inteira de entradas selecionadas de um banco de dados"></Overload></KeyWord>
+		<KeyWord name="ARRUMAR" func="yes"><Overload retVal="" descr="Remove espaços extras de um texto."></Overload></KeyWord>
+		<KeyWord name="BAHTTEXT" func="yes"><Overload retVal="" descr="Converte um número em texto, usando o formato de moeda ß (baht)"></Overload></KeyWord>
+		<KeyWord name="CARACT" func="yes"><Overload retVal="" descr="Retorna o número de caracteres de um texto."></Overload></KeyWord>
+		<KeyWord name="CARACTUNICODE" func="yes"><Overload retVal="" descr="Retorna o caractere Unicode referenciado por determinado valor numérico"></Overload></KeyWord>
+		<KeyWord name="CÓDIGO" func="yes"><Overload retVal="" descr="Retorna um código numérico para o primeiro caractere de uma cadeia de texto"></Overload></KeyWord>
+		<KeyWord name="CONCAT" func="yes"><Overload retVal="" descr="Combina o texto de vários intervalos e/ou cadeias de caracteres, mas não oferece o delimitador ou argumentos IgnoreEmpty."></Overload></KeyWord>
+		<KeyWord name="DEF.NÚM.DEC" func="yes"><Overload retVal="" descr="Define o número de casas decimais de um número."></Overload></KeyWord>
+		<KeyWord name="DETECTARIDIOMA" func="yes"><Overload retVal="" descr="Detecta o idioma de um texto."></Overload></KeyWord>
+		<KeyWord name="DIREITA" func="yes"><Overload retVal="" descr="Retorna os caracteres à direita de um texto."></Overload></KeyWord>
+		<KeyWord name="DIVIDIRTEXTO" func="yes"><Overload retVal="" descr="Divide cadeias de texto utilizando delimitadores de colunas e linhas"></Overload></KeyWord>
+		<KeyWord name="ESQUERDA" func="yes"><Overload retVal="" descr="Retorna os caracteres à esquerda de um texto."></Overload></KeyWord>
+		<KeyWord name="EXATO" func="yes"><Overload retVal="" descr="Verifica se dois valores de texto são idênticos"></Overload></KeyWord>
+		<KeyWord name="EXT.TEXTO" func="yes"><Overload retVal="" descr="Extrai um segmento de texto."></Overload></KeyWord>
+		<KeyWord name="LOCALIZAR" func="yes"><Overload retVal="" descr="Localiza um texto dentro de outro."></Overload></KeyWord>
+		<KeyWord name="MAIÚSCULA" func="yes"><Overload retVal="" descr="Converte texto em letras maiúsculas."></Overload></KeyWord>
+		<KeyWord name="MATRIZPARATEXTO" func="yes"><Overload retVal="" descr="Retorna uma matriz de valores de texto a partir de qualquer intervalo especificado"></Overload></KeyWord>
+		<KeyWord name="MINÚSCULA" func="yes"><Overload retVal="" descr="Converte texto em letras minúsculas."></Overload></KeyWord>
+		<KeyWord name="MOEDA" func="yes"><Overload retVal="" descr="Formata um número como moeda."></Overload></KeyWord>
+		<KeyWord name="MUDAR" func="yes"><Overload retVal="" descr="Substitui parte de um texto por outro."></Overload></KeyWord>
+		<KeyWord name="NÚM.CARACT" func="yes"><Overload retVal="" descr="Retorna o número de caracteres de um texto."></Overload></KeyWord>
+		<KeyWord name="PORCENTAGEMDE" func="yes"><Overload retVal="" descr="Calcula a porcentagem de um valor."></Overload></KeyWord>
+		<KeyWord name="PRI.MAIÚSCULA" func="yes"><Overload retVal="" descr="Coloca em maiúscula a primeira letra em cada palavra de um valor de texto"></Overload></KeyWord>
+		<KeyWord name="PROCURAR" func="yes"><Overload retVal="" descr="Procura um texto dentro de outro e retorna a posição."></Overload></KeyWord>
+		<KeyWord name="REGEX.EXTRAIR" func="yes"><Overload retVal="" descr="Extrai texto com base em uma expressão regular."></Overload></KeyWord>
+		<KeyWord name="REGEX.SUBSTITUIR" func="yes"><Overload retVal="" descr="Substitui texto com base em uma expressão regular."></Overload></KeyWord>
+		<KeyWord name="REGEX.TESTAR" func="yes"><Overload retVal="" descr="Testa se um texto corresponde a uma expressão regular."></Overload></KeyWord>
+		<KeyWord name="REPT" func="yes"><Overload retVal="" descr="Repete o texto um determinado número de vezes"></Overload></KeyWord>
+		<KeyWord name="SUBSTITUIR" func="yes"><Overload retVal="" descr="Substitui um texto antigo por um novo texto em uma cadeia de texto"></Overload></KeyWord>
+		<KeyWord name="T" func="yes"><Overload retVal="" descr="Converte os argumentos em texto"></Overload></KeyWord>
+		<KeyWord name="TEXTO" func="yes"><Overload retVal="" descr="Converte um valor em texto com formato especificado."></Overload></KeyWord>
+		<KeyWord name="TEXTOANTES" func="yes"><Overload retVal="" descr="Devolve texto que ocorre antes de um determinado caráter ou cadeia"></Overload></KeyWord>
+		<KeyWord name="TEXTODEPOIS" func="yes"><Overload retVal="" descr="Devolve texto que ocorre após um determinado caráter ou cadeia"></Overload></KeyWord>
+		<KeyWord name="TIRAR" func="yes"><Overload retVal="" descr="Remove caracteres especificados de um texto."></Overload></KeyWord>
+		<KeyWord name="TRADUZIR" func="yes"><Overload retVal="" descr="Traduz texto de um idioma para outro."></Overload></KeyWord>
+		<KeyWord name="UNICODE" func="yes"><Overload retVal="" descr="Retorna o número (ponto de código) que corresponde ao primeiro caractere do texto"></Overload></KeyWord>
+		<KeyWord name="UNIRTEXTO" func="yes"><Overload retVal="" descr="Combina o texto de vários intervalos e/ou cadeias"></Overload></KeyWord>
+		<KeyWord name="VALOR" func="yes"><Overload retVal="" descr="Converte texto em número."></Overload></KeyWord>
+		<KeyWord name="VALORNUMÉRICO" func="yes"><Overload retVal="" descr="Converte texto em número de uma maneira independente da localidade"></Overload></KeyWord>
+		<KeyWord name="VALORPARATEXTO" func="yes"><Overload retVal="" descr="Converte número em texto."></Overload></KeyWord>
+		<KeyWord name="BYCOL" func="yes"><Overload retVal="" descr="Aplica uma função a cada coluna."></Overload></KeyWord>
+		<KeyWord name="BYROW" func="yes"><Overload retVal="" descr="Aplica um LAMBDA a cada linha e retorna uma matriz dos resultados"></Overload></KeyWord>
+		<KeyWord name="E" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se todas as condições forem verdadeiras."></Overload></KeyWord>
+		<KeyWord name="FALSO" func="yes"><Overload retVal="" descr="Retorna o valor lógico FALSO"></Overload></KeyWord>
+		<KeyWord name="LAMBDA" func="yes"><Overload retVal="" descr="Criar funções personalizadas e reutilizáveis e chamá-las por um nome amigável"></Overload></KeyWord>
+		<KeyWord name="LET" func="yes"><Overload retVal="" descr="Atribui nomes a cálculos ou valores."></Overload></KeyWord>
+		<KeyWord name="MAKEARRAY" func="yes"><Overload retVal="" descr="Retorna uma matriz calculada de uma linha especificada e tamanho de coluna, aplicando um LAMBDA"></Overload></KeyWord>
+		<KeyWord name="MAP" func="yes"><Overload retVal="" descr="Aplica uma função a cada item de uma lista."></Overload></KeyWord>
+		<KeyWord name="NÃO" func="yes"><Overload retVal="" descr="Retorna o valor lógico contrário."></Overload></KeyWord>
+		<KeyWord name="OU" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se qualquer argumento for VERDADEIRO"></Overload></KeyWord>
+		<KeyWord name="PARÂMETRO" func="yes"><Overload retVal="" descr="Avalia uma expressão em relação a uma lista de valores e retorna o resultado correspondente ao primeiro valor correspondente. Se não houver nenhuma correspondência, um valor padrão opcional poderá ser retornado."></Overload></KeyWord>
+		<KeyWord name="REDUCE" func="yes"><Overload retVal="" descr="Reduz uma lista a um único valor aplicando uma função."></Overload></KeyWord>
+		<KeyWord name="SCAN" func="yes"><Overload retVal="" descr="Executa uma varredura cumulativa em uma lista."></Overload></KeyWord>
+		<KeyWord name="SE" func="yes"><Overload retVal="" descr="Especifica um teste lógico a ser executado"></Overload></KeyWord>
+		<KeyWord name="SEERRO" func="yes"><Overload retVal="" descr="Retorna um valor especificado se uma fórmula gerar um erro; caso contrário, retorna o resultado da fórmula"></Overload></KeyWord>
+		<KeyWord name="SENÃODISP" func="yes"><Overload retVal="" descr="Retorna o valor especificado quando a expressão é resolvida como #N/D; caso contrário, retorna o resultado da expressão"></Overload></KeyWord>
+		<KeyWord name="SES" func="yes"><Overload retVal="" descr="Avalia múltiplas condições e retorna o valor correspondente."></Overload></KeyWord>
+		<KeyWord name="VERDADEIRO" func="yes"><Overload retVal="" descr="Retorna o valor lógico VERDADEIRO"></Overload></KeyWord>
+		<KeyWord name="XOR" func="yes"><Overload retVal="" descr="Retorna um OU exclusivo lógico de todos os argumentos"></Overload></KeyWord>
+		<KeyWord name="CÉL" func="yes"><Overload retVal="" descr="Retorna informações sobre a célula."></Overload></KeyWord>
+		<KeyWord name="É.NÃO.DISP" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é o valor de erro #N/D"></Overload></KeyWord>
+		<KeyWord name="É.NÃO.TEXTO" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é diferente de texto"></Overload></KeyWord>
+		<KeyWord name="ÉCÉL.VAZIA" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é vazio"></Overload></KeyWord>
+		<KeyWord name="ÉERRO" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é um valor de erro diferente de #N/D"></Overload></KeyWord>
+		<KeyWord name="ÉERROS" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é qualquer valor de erro"></Overload></KeyWord>
+		<KeyWord name="ÉFÓRMULA" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO quando há uma referência a uma célula que contém uma fórmula"></Overload></KeyWord>
+		<KeyWord name="ÉIMPAR" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o número é ímpar"></Overload></KeyWord>
+		<KeyWord name="ÉLÓGICO" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é lógico"></Overload></KeyWord>
+		<KeyWord name="ÉNÚM" func="yes"><Overload retVal="" descr="Verifica se o valor é um número."></Overload></KeyWord>
+		<KeyWord name="ÉPAR" func="yes"><Overload retVal="" descr="Verifica se o número é par."></Overload></KeyWord>
+		<KeyWord name="ÉREF" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é uma referência"></Overload></KeyWord>
+		<KeyWord name="ÉTEXTO" func="yes"><Overload retVal="" descr="Retorna VERDADEIRO se o valor é texto"></Overload></KeyWord>
+		<KeyWord name="INFORMAÇÃO" func="yes"><Overload retVal="" descr="Retorna informações sobre o ambiente operacional atual"></Overload></KeyWord>
+		<KeyWord name="ISOMITTED" func="yes"><Overload retVal="" descr="Verifica se o valor num LAMBDA está em falta e devolve VERDADEIRO ou FALSO"></Overload></KeyWord>
+		<KeyWord name="N" func="yes"><Overload retVal="" descr="Retorna um valor convertido em número"></Overload></KeyWord>
+		<KeyWord name="NÃO.DISP" func="yes"><Overload retVal="" descr="Retorna erro se o valor não estiver disponível."></Overload></KeyWord>
+		<KeyWord name="PLAN" func="yes"><Overload retVal="" descr="Retorna o nome da planilha atual."></Overload></KeyWord>
+		<KeyWord name="PLANS" func="yes"><Overload retVal="" descr="Retorna uma lista de todas as planilhas."></Overload></KeyWord>
+		<KeyWord name="TIPO" func="yes"><Overload retVal="" descr="Retorna um número indicando o tipo de dados de um valor"></Overload></KeyWord>
+		<KeyWord name="TIPO.ERRO" func="yes"><Overload retVal="" descr="Retorna um número correspondente a um tipo de erro"></Overload></KeyWord>
+		<KeyWord name="BESSELI" func="yes"><Overload retVal="" descr="Retorna a função de Bessel In(x) modificada"></Overload></KeyWord>
+		<KeyWord name="BESSELJ" func="yes"><Overload retVal="" descr="Retorna a função de Bessel Jn(x)"></Overload></KeyWord>
+		<KeyWord name="BESSELK" func="yes"><Overload retVal="" descr="Retorna a função de Bessel Kn(x) modificada"></Overload></KeyWord>
+		<KeyWord name="BESSELY" func="yes"><Overload retVal="" descr="Retorna a função de Bessel Yn(x)"></Overload></KeyWord>
+		<KeyWord name="BINADEC" func="yes"><Overload retVal="" descr="Converte um número binário em decimal"></Overload></KeyWord>
+		<KeyWord name="BINAHEX" func="yes"><Overload retVal="" descr="Converte um número binário em hexadecimal"></Overload></KeyWord>
+		<KeyWord name="BINAOCT" func="yes"><Overload retVal="" descr="Converte um número binário em octal"></Overload></KeyWord>
+		<KeyWord name="BITAND" func="yes"><Overload retVal="" descr="Retorna um 'E de bit a bit' de dois números"></Overload></KeyWord>
+		<KeyWord name="BITOR" func="yes"><Overload retVal="" descr="Retorna um OU de bit a bit de dois números"></Overload></KeyWord>
+		<KeyWord name="BITXOR" func="yes"><Overload retVal="" descr="Retorna um 'OU exclusivo' bit a bit de dois números"></Overload></KeyWord>
+		<KeyWord name="COMPLEXO" func="yes"><Overload retVal="" descr="Converte os coeficientes reais e imaginários em um número complexo"></Overload></KeyWord>
+		<KeyWord name="CONVERTER" func="yes"><Overload retVal="" descr="Converte um valor de uma unidade para outra."></Overload></KeyWord>
+		<KeyWord name="DECABIN" func="yes"><Overload retVal="" descr="Converte um número decimal em binário"></Overload></KeyWord>
+		<KeyWord name="DECAHEX" func="yes"><Overload retVal="" descr="Converte um número decimal em hexadecimal"></Overload></KeyWord>
+		<KeyWord name="DECAOCT" func="yes"><Overload retVal="" descr="Converte um número decimal em octal"></Overload></KeyWord>
+		<KeyWord name="DEGRAU" func="yes"><Overload retVal="" descr="Testa se um número é maior do que um valor limite"></Overload></KeyWord>
+		<KeyWord name="DELTA" func="yes"><Overload retVal="" descr="Testa se dois valores são iguais"></Overload></KeyWord>
+		<KeyWord name="DESLOCDIRBIT" func="yes"><Overload retVal="" descr="Retorna um valor numérico deslocado à direita por quantidade_deslocamento bits"></Overload></KeyWord>
+		<KeyWord name="DESLOCESQBIT" func="yes"><Overload retVal="" descr="Retorna um valor numérico deslocado à esquerda por quantidade_deslocamento bits"></Overload></KeyWord>
+		<KeyWord name="FUNERRO" func="yes"><Overload retVal="" descr="Retorna a função de erro"></Overload></KeyWord>
+		<KeyWord name="FUNERRO.PRECISO" func="yes"><Overload retVal="" descr="Retorna a função de erro"></Overload></KeyWord>
+		<KeyWord name="FUNERROCOMPL" func="yes"><Overload retVal="" descr="Retorna a função de erro complementar"></Overload></KeyWord>
+		<KeyWord name="FUNERROCOMPL.PRECISO" func="yes"><Overload retVal="" descr="Retorna a função FUNERRO complementar integrada entre x e infinito"></Overload></KeyWord>
+		<KeyWord name="HEXABIN" func="yes"><Overload retVal="" descr="Converte um número hexadecimal em binário"></Overload></KeyWord>
+		<KeyWord name="HEXADEC" func="yes"><Overload retVal="" descr="Converte um número hexadecimal em decimal"></Overload></KeyWord>
+		<KeyWord name="HEXAOCT" func="yes"><Overload retVal="" descr="Converte um número hexadecimal em octal"></Overload></KeyWord>
+		<KeyWord name="IMABS" func="yes"><Overload retVal="" descr="Retorna o valor absoluto (módulo) de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMAGINÁRIO" func="yes"><Overload retVal="" descr="Retorna o coeficiente imaginário de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMARG" func="yes"><Overload retVal="" descr="Retorna o argumento teta, um ângulo expresso em radianos"></Overload></KeyWord>
+		<KeyWord name="IMCONJ" func="yes"><Overload retVal="" descr="Retorna o conjugado complexo de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMCOS" func="yes"><Overload retVal="" descr="Retorna o cosseno de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMCOSEC" func="yes"><Overload retVal="" descr="Retorna a cossecante de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMCOSECH" func="yes"><Overload retVal="" descr="Retorna a cossecante hiperbólica de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMCOSH" func="yes"><Overload retVal="" descr="Retorna o cosseno hiperbólico de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMCOT" func="yes"><Overload retVal="" descr="Retorna a cotangente de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMDIV" func="yes"><Overload retVal="" descr="Retorna o quociente de dois números complexos"></Overload></KeyWord>
+		<KeyWord name="IMEXP" func="yes"><Overload retVal="" descr="Retorna o exponencial de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMLN" func="yes"><Overload retVal="" descr="Retorna o logaritmo natural de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMLOG10" func="yes"><Overload retVal="" descr="Retorna o logaritmo de base 10 de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMLOG2" func="yes"><Overload retVal="" descr="Retorna o logaritmo de base 2 de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMPOT" func="yes"><Overload retVal="" descr="Retorna um número complexo elevado à potência de um inteiro"></Overload></KeyWord>
+		<KeyWord name="IMPROD" func="yes"><Overload retVal="" descr="Retorna o produto de 2 a 255 números complexos"></Overload></KeyWord>
+		<KeyWord name="IMRAIZ" func="yes"><Overload retVal="" descr="Retorna a raiz quadrada de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMREAL" func="yes"><Overload retVal="" descr="Retorna o coeficiente real de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMSEC" func="yes"><Overload retVal="" descr="Retorna a secante de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMSECH" func="yes"><Overload retVal="" descr="Retorna a secante hiperbólica de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMSENH" func="yes"><Overload retVal="" descr="Retorna o seno hiperbólico de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMSENO" func="yes"><Overload retVal="" descr="Retorna o seno de um número complexo"></Overload></KeyWord>
+		<KeyWord name="IMSOMA" func="yes"><Overload retVal="" descr="Retorna a soma de números complexos"></Overload></KeyWord>
+		<KeyWord name="IMSUBTR" func="yes"><Overload retVal="" descr="Retorna a diferença entre dois números complexos"></Overload></KeyWord>
+		<KeyWord name="IMTAN" func="yes"><Overload retVal="" descr="Retorna a tangente de um número complexo"></Overload></KeyWord>
+		<KeyWord name="OCTABIN" func="yes"><Overload retVal="" descr="Converte um número octal em binário"></Overload></KeyWord>
+		<KeyWord name="OCTADEC" func="yes"><Overload retVal="" descr="Converte um número octal em decimal"></Overload></KeyWord>
+		<KeyWord name="OCTAHEX" func="yes"><Overload retVal="" descr="Converte um número octal em hexadecimal"></Overload></KeyWord>
+		<KeyWord name="CONJUNTOCUBO" func="yes"><Overload retVal="" descr="Define um conjunto calculado de membros ou tuplas enviando uma expressão do conjunto para o cubo no servidor, que cria o conjunto e o retorna para o Microsoft Excel."></Overload></KeyWord>
+		<KeyWord name="CONTAGEMCONJUNTOCUBO" func="yes"><Overload retVal="" descr="Retorna o número de itens em um conjunto."></Overload></KeyWord>
+		<KeyWord name="MEMBROCLASSIFICADOCUBO" func="yes"><Overload retVal="" descr="Retorna o enésimo membro, ou o membro ordenado, em um conjunto. Use para retornar um ou mais elementos em um conjunto, assim como o melhor vendedor ou os dez melhores alunos."></Overload></KeyWord>
+		<KeyWord name="MEMBROCUBO" func="yes"><Overload retVal="" descr="Retorna um membro ou uma tupla a partir do cubo. Use para validar a existência do membro ou da tupla no cubo."></Overload></KeyWord>
+		<KeyWord name="MEMBROKPICUBO" func="yes"><Overload retVal="" descr="Retorna a propriedade de um indicador chave de desempenho (KPI) e exibe o nome do KPI na célula. Um KPI é uma medida quantificável, como o lucro bruto mensal ou a rotatividade trimestral de funcionários, usada para monitorar o desempenho de uma organização."></Overload></KeyWord>
+		<KeyWord name="PROPRIEDADEMEMBROCUBO" func="yes"><Overload retVal="" descr="Retorna o valor da propriedade de um membro a partir do cubo. Usada para validar a existência do nome do membro no cubo e para retornar a propriedade especificada para esse membro."></Overload></KeyWord>
+		<KeyWord name="VALORCUBO" func="yes"><Overload retVal="" descr="Retorna um valor agregado do cubo."></Overload></KeyWord>
+		<KeyWord name="ARREDMULTB" func="yes"><Overload retVal="" descr="Arredonda um número para o múltiplo mais próximo especificado."></Overload></KeyWord>
+		<KeyWord name="BETA.ACUM.INV" func="yes"><Overload retVal="" descr="Retorna o inverso da função de distribuição cumulativa para uma distribuição beta especificada"></Overload></KeyWord>
+		<KeyWord name="CONCATENAR" func="yes"><Overload retVal="" descr="Une duas ou mais cadeias de caracteres de texto em uma cadeia de caracteres"></Overload></KeyWord>
+		<KeyWord name="COVAR" func="yes"><Overload retVal="" descr="Retorna a covariância, a média dos produtos dos desvios pares"></Overload></KeyWord>
+		<KeyWord name="CRIT.BINOM" func="yes"><Overload retVal="" descr="Retorna o menor valor para o qual a distribuição binomial cumulativa é menor ou igual ao valor padrão"></Overload></KeyWord>
+		<KeyWord name="DESVPAD" func="yes"><Overload retVal="" descr="Estima o desvio padrão com base em uma amostra"></Overload></KeyWord>
+		<KeyWord name="DESVPADP" func="yes"><Overload retVal="" descr="Calcula o desvio padrão com base na população total"></Overload></KeyWord>
+		<KeyWord name="DIST.HIPERGEOM" func="yes"><Overload retVal="" descr="Retorna a distribuição hipergeométrica"></Overload></KeyWord>
+		<KeyWord name="DIST.LOGNORMAL" func="yes"><Overload retVal="" descr="Retorna a distribuição log-normal cumulativa"></Overload></KeyWord>
+		<KeyWord name="DIST.QUI" func="yes"><Overload retVal="" descr="Retorna a probabilidade unicaudal da distribuição qui-quadrada"></Overload></KeyWord>
+		<KeyWord name="DISTBETA" func="yes"><Overload retVal="" descr="Retorna a função de distribuição cumulativa beta"></Overload></KeyWord>
+		<KeyWord name="DISTEXPON" func="yes"><Overload retVal="" descr="Retorna a distribuição exponencial"></Overload></KeyWord>
+		<KeyWord name="DISTF" func="yes"><Overload retVal="" descr="Retorna a distribuição da probabilidade F"></Overload></KeyWord>
+		<KeyWord name="DISTGAMA" func="yes"><Overload retVal="" descr="Retorna a distribuição gama"></Overload></KeyWord>
+		<KeyWord name="DISTNORM" func="yes"><Overload retVal="" descr="Retorna a distribuição cumulativa normal"></Overload></KeyWord>
+		<KeyWord name="DISTNORMP" func="yes"><Overload retVal="" descr="Retorna a distribuição cumulativa normal padrão"></Overload></KeyWord>
+		<KeyWord name="DISTRBINOM" func="yes"><Overload retVal="" descr="Retorna a probabilidade da distribuição binomial do termo individual"></Overload></KeyWord>
+		<KeyWord name="DISTT" func="yes"><Overload retVal="" descr="Retorna a distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="INT.CONFIANÇA" func="yes"><Overload retVal="" descr="Retorna o intervalo de confiança de uma média."></Overload></KeyWord>
+		<KeyWord name="INV.NORM" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa normal"></Overload></KeyWord>
+		<KeyWord name="INV.NORMP" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa normal padrão"></Overload></KeyWord>
+		<KeyWord name="INV.QUI" func="yes"><Overload retVal="" descr="Retorna o inverso da probabilidade unicaudal da distribuição qui-quadrada"></Overload></KeyWord>
+		<KeyWord name="INVF" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição de probabilidade F"></Overload></KeyWord>
+		<KeyWord name="INVGAMA" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição cumulativa gama"></Overload></KeyWord>
+		<KeyWord name="INVLOG" func="yes"><Overload retVal="" descr="Retorna o inverso da função de distribuição cumulativa lognormal"></Overload></KeyWord>
+		<KeyWord name="INVT" func="yes"><Overload retVal="" descr="Retorna o inverso da distribuição t de Student"></Overload></KeyWord>
+		<KeyWord name="MODO" func="yes"><Overload retVal="" descr="Retorna o valor mais comum em um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="ORDEM" func="yes"><Overload retVal="" descr="Retorna a classificação de um valor em um conjunto."></Overload></KeyWord>
+		<KeyWord name="ORDEM.PORCENTUAL" func="yes"><Overload retVal="" descr="Retorna a ordem percentual de um valor em um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="PERCENTIL" func="yes"><Overload retVal="" descr="Retorna o k-ésimo percentil de valores em um intervalo"></Overload></KeyWord>
+		<KeyWord name="POISSON" func="yes"><Overload retVal="" descr="Retorna a distribuição de Poisson"></Overload></KeyWord>
+		<KeyWord name="PREVISÃO" func="yes"><Overload retVal="" descr="Calcula, ou prevê, um valor futuro usando valores existentes."></Overload></KeyWord>
+		<KeyWord name="QUARTIL" func="yes"><Overload retVal="" descr="Retorna o quartil de um conjunto de dados"></Overload></KeyWord>
+		<KeyWord name="TESTE.QUI" func="yes"><Overload retVal="" descr="Retorna o teste para a independência"></Overload></KeyWord>
+		<KeyWord name="TESTEF" func="yes"><Overload retVal="" descr="Retorna o resultado de um teste F"></Overload></KeyWord>
+		<KeyWord name="TESTET" func="yes"><Overload retVal="" descr="Retorna a probabilidade associada ao teste t de Student"></Overload></KeyWord>
+		<KeyWord name="TESTEZ" func="yes"><Overload retVal="" descr="Retorna o valor de probabilidade unicaudal de um teste z"></Overload></KeyWord>
+		<KeyWord name="TETO" func="yes"><Overload retVal="" descr="Arredonda um número até o inteiro mais próximo ou o múltiplo de significância mais próximo"></Overload></KeyWord>
+		<KeyWord name="VAR" func="yes"><Overload retVal="" descr="Estima a variância com base em uma amostra"></Overload></KeyWord>
+		<KeyWord name="VARP" func="yes"><Overload retVal="" descr="Calcula a variância com base em toda a população"></Overload></KeyWord>
+		<KeyWord name="WEIBULL" func="yes"><Overload retVal="" descr="Retorna a distribuição de Weibull"></Overload></KeyWord>
+		<KeyWord name="CODIFURL" func="yes"><Overload retVal="" descr="Retorna uma cadeia de caracteres codificada como URL."></Overload></KeyWord>
+		<KeyWord name="FILTROXML" func="yes"><Overload retVal="" descr="Retorna dados específicos do conteúdo XML usando o XPath especificado."></Overload></KeyWord>
+		<KeyWord name="SERVIÇOWEB" func="yes"><Overload retVal="" descr="Retorna dados de um serviço Web"></Overload></KeyWord>
+	</AutoComplete>
+</NotepadPlus>
