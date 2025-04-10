@@ -1,6 +1,6 @@
 # NppExcelUDL
 
-Disponibilizar instruções de como adicionar ao editor Notepad++[^1], realce de sintaxe customizado, *User Defined Language (UDL)*[^2], com base nas fórmulas do **Excel 365 (PT-BR)**. Bem como preenchimento automático das funções e apresentação de seus respectivos argumentos.
+Disponibilizar instruções de como adicionar ao editor Notepad++[^1], realce de sintaxe customizado, *User Defined Language (UDL)*[^2], com base nas fórmulas do **Excel 365 (PT-BR)**. Bem como preenchimento automático das funções[^3] e apresentação de seus respectivos argumentos.
 
 # 1. Destaque de Sintaxe
 
@@ -19,9 +19,9 @@ Além da sintaxe personalizada, é possível implementar o preenchimento automá
 
 Baixe o arquivo [EXCEL.xml](EXCEL.xml) e salve-o na subpasta `autoCompletion` da pasta onde o Notepad++ foi instalado.
 
-Caso tenha mantido o caminho padrão, será: `%ProgramFiles%\Notepad++\autoCompletion\`.
+Caso tenha mantido o caminho padrão, será: `%ProgramFiles%\Notepad++\autoCompletion\`
 
-Cabe destacar que, diferentemente de alguns arquivos de configuração, este não funcionará através do caminho `"%AppData%\Notepad++\...`.
+Cabe destacar que, diferentemente de alguns arquivos de configuração, este não funcionará através do caminho `"%AppData%\Notepad++\...`
 
 
 ## 2.1 Dicas de parâmetros
@@ -31,3 +31,4 @@ O arquivo de definição de preenchimento automático pode especificar se uma pa
 
 [^1]: [Notepad++](https://notepad-plus-plus.org/)
 [^2]: [Syntax Highlighting - User Defined Languages | Notepad++ User Manual](https://npp-user-manual.org/docs/user-defined-language-system/)
+[^3]: [Auto-Completion | Notepad++ User Manual](https://npp-user-manual.org/docs/auto-completion/)
